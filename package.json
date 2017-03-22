@@ -1,7 +1,7 @@
 {
-  "name": "react-hot-boilerplate-vscode",
+  "name": "react-webpack-vscode-debug",
   "version": "1.0.0",
-  "description": "A new Webpack boilerplate with hot reloading React components, error handling on module and component level and Visual Studio Code integration",
+  "description": "Boilerplate for Vscode's Debug (server and client side) for React, Babel, Webpack's Projects",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "cross-env NODE_ENV=production webpack --colors --config webpack.config.prod.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/skolmer/react-hot-boilerplate-vscode.git"
+    "url": "https://github.com/taquiles/react-webpack-es6-vscode-debug"
   },
   "keywords": [
     "react",
@@ -25,12 +25,10 @@
     "webpack",
     "babel"
   ],
-  "author": "Steffen Kolmer <steffen@kolmer.net> (http://github.com/skolmer)",
+  "author": "Pedro Galvão <taquiles@gmail.com> (http://github.com/taquiles)",
   "license": "CC0-1.0",
-  "bugs": {
-    "url": "https://github.com/skolmer/react-hot-boilerplate-vscode/issues"
   },
-  "homepage": "https://github.com/skolmer/react-hot-boilerplate-vscode",
+  "homepage": "https://github.com/taquiles/react-webpack-es6-vscode-debug",
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-eslint": "^6.1.2",
@@ -41,7 +39,7 @@
     "babel-preset-react-optimize": "^1.0.1",
     "babel-preset-stage-0": "^6.5.0",
     "cross-env": "^2.0.1",
-    "eslint": "^3.5.0",
+    "eslint": "^3.17.1",
     "eslint-import-resolver-webpack": "^0.6.0",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^1.16.0",
@@ -61,7 +59,7 @@
   },
   "config": {
     "host": "localhost",
-    "port": 3000,
+    "port": 3001,
     "ghooks": {
       "pre-commit": "npm run lint"
     }

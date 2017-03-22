@@ -1,8 +1,16 @@
 {
 	"version": "0.2.0",
-	"configurations": [
-	    {
-                "name": "Debug",
+	"configurations": 
+        [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Server",
+                "program": "${workspaceRoot}/devServer.js",
+                "cwd": "${workspaceRoot}"
+            },
+            {
+                "name": "Client",
                 "type": "chrome",
                 "request": "launch",
                 "webRoot": "${workspaceRoot}",
@@ -19,5 +27,10 @@
                     "webpack:///*": "${webRoot}/*"
                 }
             }
-	]
+        ],
+            "compounds": [
+            {
+                "name": "Server/Client Debug",
+                "configurations": ["Server", "Client"]
+            }]
 }

@@ -70,7 +70,7 @@
 					]
 				}
 			],
-			"isWatching": true,
+			"isBackground": true,
 			"taskName": "development"
 		},
 		{
